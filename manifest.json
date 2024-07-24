@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Thumbnail and Recommendation Hider",
+    "version": "1.0",
+    "description": "Hides all thumbnails on YouTube's homepage except for the subscriptions section and the search bar. Also hides recommendations on the video watch page.",
+    "permissions": ["activeTab", "declarativeContent"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
