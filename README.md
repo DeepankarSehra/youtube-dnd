@@ -1,2 +1,2 @@
 # youtube-dnd
-youtube extension for "DND" mode
+browser extension for "DND" mode
